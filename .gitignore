@@ -18,6 +18,7 @@ wrangler.toml
 # --- internal-only operational docs ---
 DEPLOYMENT.md
 OUTREACH_PLAYBOOK.md
+DIRECTORY_SUBMISSIONS.md
 
 # --- OS / editor detritus ---
 .DS_Store
