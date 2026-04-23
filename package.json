@@ -3,9 +3,15 @@
   "version": "0.1.0",
   "description": "Archonics agent audit tools — free-tier context engineering scans for production agent systems",
   "type": "module",
-  "bin": { "archonics-audit": "./index.js" },
-  "main": "./index.js",
-  "files": ["index.js", "README.md", "LICENSE"],
+  "bin": {
+    "archonics-audit": "index.js"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js",
@@ -29,8 +35,18 @@
   "author": "Archonics",
   "license": "MIT",
   "homepage": "https://archonics.ai",
-  "repository": { "type": "git", "url": "git+https://github.com/archonics/mcp-audit.git" },
-  "bugs": { "url": "https://archonics.ai", "email": "audits@archonics.ai" },
-  "engines": { "node": ">=18.0.0" },
-  "publishConfig": { "access": "public" }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archonics/mcp-audit.git"
+  },
+  "bugs": {
+    "url": "https://archonics.ai",
+    "email": "audits@archonics.ai"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
