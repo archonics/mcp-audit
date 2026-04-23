@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.archonics/mcp-audit",
-  "description": "Free-tier context engineering audits for production AI agents. BYOK Anthropic key. Returns top-3 findings on system prompts, tool definitions, or context packing using Archonics Audit Methodology v1.0.",
+  "description": "Free context-engineering audits for AI agents. BYOK Anthropic key. Top-3 findings per scan.",
   "repository": {
     "url": "https://github.com/archonics/mcp-audit",
     "source": "github"
