@@ -1,6 +1,7 @@
 {
   "name": "@archonics/mcp-audit",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.archonics/mcp-audit",
   "description": "Archonics agent audit tools — free-tier context engineering scans for production agent systems",
   "type": "module",
   "bin": {

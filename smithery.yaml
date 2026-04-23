@@ -1,0 +1,16 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - anthropicApiKey
+    properties:
+      anthropicApiKey:
+        type: string
+        description: "Anthropic API key. Used by the audit engine. BYOK — keys go directly from your machine to Anthropic, never through Archonics servers."
+  commandFunction: |-
+    (config) => ({
+      command: 'node',
+      args: ['index.js'],
+      env: { ANTHROPIC_API_KEY: config.anthropicApiKey }
+    })

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.archonics/mcp-audit",
+  "description": "Free-tier context engineering audits for production AI agents. BYOK Anthropic key. Returns top-3 findings on system prompts, tool definitions, or context packing using Archonics Audit Methodology v1.0.",
+  "repository": {
+    "url": "https://github.com/archonics/mcp-audit",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@archonics/mcp-audit",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Your Anthropic API key. Required — the audit engine calls Claude directly from your machine.",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
