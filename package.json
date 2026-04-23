@@ -1,0 +1,36 @@
+{
+  "name": "@archonics/mcp-audit",
+  "version": "0.1.0",
+  "description": "Archonics agent audit tools — free-tier context engineering scans for production agent systems",
+  "type": "module",
+  "bin": { "archonics-audit": "./index.js" },
+  "main": "./index.js",
+  "files": ["index.js", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node --check index.js && echo smoke-ok"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@anthropic-ai/sdk": "^0.90.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "agent",
+    "audit",
+    "prompt-engineering",
+    "context-engineering",
+    "evaluation",
+    "archonics",
+    "claude"
+  ],
+  "author": "Archonics",
+  "license": "MIT",
+  "homepage": "https://archonics.ai",
+  "repository": { "type": "git", "url": "git+https://github.com/archonics/mcp-audit.git" },
+  "bugs": { "url": "https://archonics.ai", "email": "audits@archonics.ai" },
+  "engines": { "node": ">=18.0.0" },
+  "publishConfig": { "access": "public" }
+}

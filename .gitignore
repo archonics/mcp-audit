@@ -1,0 +1,40 @@
+# --- npm ---
+node_modules/
+npm-debug.log*
+*.tgz
+
+# --- build / deployment artifacts ---
+landing/
+index.html
+archonics-landing.zip
+*.zip
+
+# --- Cloudflare Worker (separate project, not part of this package) ---
+worker.js
+wrangler.toml
+.wrangler/
+.dev.vars
+
+# --- internal-only operational docs ---
+DEPLOYMENT.md
+OUTREACH_PLAYBOOK.md
+
+# --- OS / editor detritus ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+ziPRGOMj
+*~
+.vscode/
+.idea/
+
+# --- local env / secrets ---
+.env
+.env.*
+.github-pat
+.github-pat.*
+.npm-token
+.npm-token.*
+*.pat
+*.secret
