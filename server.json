@@ -6,12 +6,12 @@
     "url": "https://github.com/archonics/mcp-audit",
     "source": "github"
   },
-  "version": "0.1.1",
+  "version": "0.1.4",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@archonics/mcp-audit",
-      "version": "0.1.1",
+      "version": "0.1.4",
       "transport": {
         "type": "stdio"
       },

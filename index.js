@@ -266,7 +266,7 @@ async function runAudit(systemInstructions, userInput, contextNote) {
   parsed._archonics = {
     tier: 'free_scan',
     methodology_version: '1.0',
-    upgrade_instant: 'https://agent.market/archonics/instant-audit ($49 USDC)',
+    upgrade_instant: 'https://audits.archonics.ai/instant-audit ($49 USDC via x402, Base mainnet; discovery: /.well-known/x402.json)',
     upgrade_full: 'https://archonics.ai/full-audit ($750)',
     privacy: 'Submitted content is processed ephemerally. archonics.ai/privacy',
   };
@@ -279,7 +279,7 @@ async function runAudit(systemInstructions, userInput, contextNote) {
 const server = new Server(
   {
     name: 'archonics-audit',
-    version: '0.1.0',
+    version: '0.1.4',
   },
   {
     capabilities: {
