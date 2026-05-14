@@ -41,7 +41,7 @@ let _anthropic = null;
 function getAnthropicClient() {
   if (!process.env.ANTHROPIC_API_KEY) {
     throw new Error(
-      'ANTHROPIC_API_KEY is not set. Archonics audits use your own Anthropic API key (bring-your-own-key). Add it to your MCP client configuration under the server\'s "env" block (e.g., claude_desktop_config.json) and restart the client. See https://archonics.ai for setup help.'
+      'ANTHROPIC_API_KEY is not set. Archonics audits use your own Anthropic API key (bring-your-own-key). Add it under the `env` block of your MCP client config (e.g., claude_desktop_config.json, .cursor/mcp.json, or via `claude mcp add`). Restart the client after adding. See https://archonics.ai for setup help.'
     );
   }
   if (!_anthropic) {
@@ -279,7 +279,7 @@ async function runAudit(systemInstructions, userInput, contextNote) {
 const server = new Server(
   {
     name: 'archonics-audit',
-    version: '0.1.4',
+    version: '0.1.5',
   },
   {
     capabilities: {
